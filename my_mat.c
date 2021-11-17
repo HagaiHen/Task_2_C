@@ -10,7 +10,7 @@ int getMat(int arr [10][10]) {
     for (int i =0 ; i<10; i++) {
         for (int j =0; j<10; j++) {
             //printf("Enter the [%d,%d] place: ", i, j);
-            scanf("%d", &arr[i][j]);
+            scanf("%d ", &arr[i][j]);
         }
     }
     return 0;
@@ -58,10 +58,10 @@ int ShortestPath (int a [10][10]) {
     }
     //printf("%f\n", min(a[n][m],a[m][n]));
     if (a[n][m] != 0 && a[m][n] != 0) {
-        printf("%d", min(a[n][m], a[m][n]));
+        printf("%d\n", min(a[n][m], a[m][n]));
     } else {
         if (a[n][m] == 0 && a[m][n] == 0) {
-            printf("-1");
+            printf("-1\n");
         } else {
             if (a[n][m] == 0) {
                 printf("%d", a[m][n]);
