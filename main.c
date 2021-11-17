@@ -24,6 +24,6 @@ int main () {
             break;
 
         }
-    scanf("%c", &ch);
+    scanf(" %c", &ch);
     }
 }
