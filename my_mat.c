@@ -6,10 +6,10 @@ int min (int n1, int n2){
 }
 
 int getMat(int arr [10][10]) {
-    printf("Enter the Matrix values:\n");
+    //printf("Enter the Matrix values:\n");
     for (int i =0 ; i<10; i++) {
         for (int j =0; j<10; j++) {
-            printf("Enter the [%d,%d] place: ", i, j);
+            //printf("Enter the [%d,%d] place: ", i, j);
             scanf("%d", &arr[i][j]);
         }
     }
