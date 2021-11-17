@@ -5,21 +5,25 @@ int main () {
     char ch;
     int arr [10][10];
     scanf("%c", &ch);
-    switch (ch) {
-        case 'A':
-        getMat(arr);
-        break;
+    while (ch == 'A' || ch == 'B' || ch == 'C') {
+    
+        switch (ch) {
+            case 'A':
+            getMat(arr);
+            break;
 
-        case 'B':
-        PathExist(arr);
-        break;
+            case 'B':
+            PathExist(arr);
+            break;
 
-        case 'C':
-        ShortestPath(arr);
-        break;
+            case 'C':
+            ShortestPath(arr);
+            break;
 
-        default:
-        break;
+            default:
+            break;
 
+        }
+    scanf("%c", &ch);
     }
 }
