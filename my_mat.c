@@ -4,7 +4,7 @@
 static int arr [10][10];
 
 int getMat() {
-    for (int i =0 ; i<10; i++) {
+    for (int i =0 ; i<10; i++) { //get the values of the matrix from the user
         for (int j =0; j<10; j++) {
             scanf("%d ", &arr[i][j]);
         }
@@ -26,10 +26,11 @@ int getMat() {
     return 0;
 }
 
-int PathExist () {
+int PathExist () {  //this function check if these a path between 2 points. returns True or False
     int n = 0, m = 0;
     scanf("%d", &n);
     scanf("%d", &m);
+    // algorithm to find the shortest path
     for(int k=0; k<10; k++){
         for(int i=0; i<10; i++){
             for (int j=0; j<10; j++){
@@ -38,7 +39,7 @@ int PathExist () {
                     arr[i][j] = arr[i][k] + arr[k][j];
                 }
                 if (i == j) {
-                    arr[i][j] = 0;
+                    arr[i][j] = 0; //set zeros in the diagonal (the distance between point to itselt is zero
                 }
             }
         }
@@ -51,11 +52,12 @@ int PathExist () {
     }
     return 0;
 }
-
+//This function find the shortest path between 2 points
 int ShortestPath () {
     int n = 0, m = 0;
     scanf("%d", &n);
     scanf("%d", &m);
+    // algorithm to find the shortest path
     for(int k=0; k<10; k++){
         for(int i=0; i<10; i++){
             for (int j=0; j<10; j++){
@@ -63,7 +65,7 @@ int ShortestPath () {
                     arr[i][j] = arr[i][k] + arr[k][j];
                 }
                 if (i == j) {
-                    arr[i][j] = 0;
+                    arr[i][j] = 0; //set zeros in the diagonal (the distance between point to itselt is zero
                 }
             }
         }
