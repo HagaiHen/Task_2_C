@@ -1,9 +1,9 @@
 #ifndef __MY_LIB__h
 #define __MY_LIB__h
 
-int getMat();
-int ShortestPath();
-int PathExist();
+void getMat();
+void ShortestPath();
+void PathExist();
 
 
 #endif
