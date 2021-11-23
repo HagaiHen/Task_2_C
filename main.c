@@ -2,7 +2,7 @@
 #include "my_mat.h"
 
 
-
+//this program run all the functions by choosing A, B or C
 int main () {
     char ch;
     
