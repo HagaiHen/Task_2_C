@@ -1,23 +1,26 @@
 #include <stdio.h>
 #include "my_mat.h"
 
+
+
 int main () {
     char ch;
-    int arr [10][10];
+    
     scanf("%c", &ch);
+    
     while (ch == 'A' || ch == 'B' || ch == 'C') {
     
         switch (ch) {
             case 'A':
-            getMat(arr);
+            getMat();
             break;
 
             case 'B':
-            PathExist(arr);
+            PathExist();
             break;
 
             case 'C':
-            ShortestPath(arr);
+            ShortestPath();
             break;
 
             default:

@@ -1,11 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-int min (int n1, int n2){
-    return (n2<n1) ? n2:n1;
-}
+static int arr [10][10];
 
-int getMat(int arr [10][10]) {
+int getMat() {
     for (int i =0 ; i<10; i++) {
         for (int j =0; j<10; j++) {
             scanf("%d ", &arr[i][j]);
@@ -24,17 +22,11 @@ int getMat(int arr [10][10]) {
             }
         }
     }
-    for (int i =0 ; i<10; i++) {
-        for (int j =0; j<10; j++) {
-            printf("%d ", arr[i][j]);
-
-        }
-        printf("\n");
-    }
+    
     return 0;
 }
 
-int PathExist (int arr [10][10]) {
+int PathExist () {
     int n = 0, m = 0;
     scanf("%d", &n);
     scanf("%d", &m);
@@ -60,7 +52,7 @@ int PathExist (int arr [10][10]) {
     return 0;
 }
 
-int ShortestPath (int arr [10][10]) {
+int ShortestPath () {
     int n = 0, m = 0;
     scanf("%d", &n);
     scanf("%d", &m);
