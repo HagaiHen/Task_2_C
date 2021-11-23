@@ -3,15 +3,16 @@
 
 static int arr [10][10];
 
-void getMat() { //get the values from the user
+int getMat() { //get the values from the user
     for (int i =0 ; i<10; i++) {
         for (int j =0; j<10; j++) {
             scanf("%d ", &arr[i][j]);
         }
     }
+    return 0;
 }
 
-void PathExist () { //this function check if these a path between 2 points. returns True or False.
+int PathExist () { //this function check if these a path between 2 points. returns True or False.
     int n = 0, m = 0;
     scanf("%d", &n);
     scanf("%d", &m);
@@ -35,9 +36,10 @@ void PathExist () { //this function check if these a path between 2 points. retu
     } else {
         printf("False\n");
     }
+    return 0;
 }
 //This function find the shortest path between 2 points
-void ShortestPath () {
+int ShortestPath () {
     int n = 0, m = 0;
     scanf("%d", &n);
     scanf("%d", &m);
@@ -59,5 +61,6 @@ void ShortestPath () {
         else {
             printf("%d\n", arr[n][m]);
         }
+    return 0;
     
 }
